@@ -16,7 +16,7 @@
 #
 
 LOCAL_PATH := $(call my-dir)
-
+ifeq ($(TARGET_USES_PIXEL_IMAGES_BY_DEFAULT),)
 ### pixel_charger_res_images ###
 ifneq ($(strip $(LOCAL_CHARGER_NO_UI)),true)
 define _add-product-charger-image
@@ -105,3 +105,4 @@ _img_modules_vendor :=
 _anim_modules :=
 _anim_modules_vendor :=
 endif # LOCAL_CHARGER_NO_UI
+endif
