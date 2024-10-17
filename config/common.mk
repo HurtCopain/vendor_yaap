@@ -186,9 +186,6 @@ PRODUCT_HOST_PACKAGES += \
 # Themes
 $(call inherit-product, vendor/themes/common.mk)
 
-# Sepolicy
-$(call inherit-product, vendor/yaap/config/sepolicy.mk)
-
 # Virtualization
 $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk)
 PRODUCT_PRODUCT_PROPERTIES += \
